@@ -1,13 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700');
-
 *{
-	font-family: 'Poppins', sans-serif;
-	margin:0;
-	padding: 0;
-	box-sizing: border-box;
-	outline: none;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
     border:none;
     text-decoration:none;
     text-transform: capitalize;
 }
-html{overflow-x: hidden;}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #3B94C7;
+}
+ul li{list-style-type:none}
+img{max-width: 100%;}
+p{font-size:14px;}
+.wrapper{width:80%;overflow:hidden;margin:0 auto;}
+.f_left{float: left}
+.f_right{float: right}
+.t_right{text-align:right}
+.t_left{text-align:left}
+.d_block{display:block}
+.d_inlineblock{display:inline-block}
+header{min-height:60px;border-bottom: 2px solid #0A1119;background:#121B2A}
+header .wrapper{}
+
+.logo{width:15%}
+.logo img{margin-top: 15px;}
+nav ul li{display:inline-block;
+	margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;}
+nav ul li a{padding: 10px; font-size: 14px;text-transform:uppercase;color:#fff;transition:.2s linear}
+nav ul li:last-child{
+	margin-right: 0;
+}
+nav ul li:last-child a{padding-right: 0}
+nav ul li a.active, nav ul li a:hover{color: #3B94C7}
+.top-btn{font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+    background: #fff;
+    padding: 6px 16px;
+    margin-top: 0px;
+    display: inline-block;
+    font-weight: normal;
+}
+.top-btn i{padding-right: 5px;}
+.top-btn:first-child{margin-right: -2px}
+.top-btn.blue{
+	background: #0073b5;
+}
+.banner{
+  background: url('../img/banner.jpg') no-repeat top right;
+  background-size: cover;min-height:50vh;
+}
+.banner .content{width:45%;margin-top:200px;margin-bottom:50px;}
+.banner h2{color: #fff;font-size: 3rem;font-weight: normal;}
+.banner h1{color: #0077BC;font-size:3.5rem;}
+.banner p{color: #fff;font-size:14px;}
+.btn{background: #fff;padding:10px 10px 10px 15px;border-radius:5px;color:#2D2D2D;font-size:18px;font-weight:600;cursor: pointer;transition: .2s linear;margin-top:10px;}
+.btn span{background:#3B94C8;border-radius: 30px;margin-left:10px; color: #fff; padding:1px 8px;font-weight:bold}
+.blue_text{color:#3B94C7}
+.service{padding: 30px 0;background: #121B2C;color:#fff}
+.single{    width: 30%;
+    padding: 10px 0px;
+    padding-right: 25px;
+    /*border-right: 1px solid blue;*/
+    margin-right: 22px;}
+.single:last-child{margin-right:0;border-right:0}
+.icon_container{overflow:hidden;margin-bottom:15px;}
+
+.icon{width:25%; float:left}
+.icon_text{width:70%;float:left}
+.icon_text h2{font-size: 2.4rem;
+    margin-left: 4px;
+    padding-left: 6px;
+    font-weight: 400;
+    line-height: 2.5rem;
+    padding-top: 15px;}
+.icon_text h2 span{color: #3B94C7;
+    font-weight: 600;}
+.information{background: #040811;padding:30px 0;overflow:hidden;color: #ffffff;}
+.col-3{
+  width:30%;float:left
+}
+h4.title{font-size:18px;}
+address{font-size:14px;}
+.information a{color: #ffffff;font-size:14px;}
+.p-15{
+    padding: 15px;}
+.testimonial_content{    position: relative;
+    background: #0C1019;margin-bottom:10px}
+.testimonial_content:after{
+      content: '';
+    position: absolute;
+    right: 15%;
+    bottom: -28px;
+    width: 0;
+    height: 0;
+    border-top: 29px solid #0C1019;
+    border-right: 50px solid transparent;
+}
+
+footer{background: #121B2C;padding:40px 0;color:#fff;font-size:14px;}
+footer ul li{display:inline-block;padding-right:10px;}
+
+footer ul li a{color: #fff; padding-right: 10px;padding-left:15px;}
+footer ul li a:first-child{padding-left:0}
+.footer_img{padding-right:10px;}
+.col-60{width:60%}
+.col-40{width:40%}
+@media screen and (max-width: 768px){
+
+	.wrapper{width: 100%}
+  nav{width:100%;}
+  nav ul li{margin-top: 15px;
+    margin-right: 10px;}
+  .banner{padding: 0 25px;}
+  .single{    width: 40%;
+    margin-bottom: 29px;
+    padding: 0 25px;
+    min-height: 250px;
+    overflow: hidden;}
+  .col-3{width:40%}
+  .rightcontent {width:50%}
+  .img_container {overflow:hidden}
+  .leftimg {width:50%}
+}
+@media screen and (max-width: 480px){
+	.logo{width: 100%;
+    text-align: center;}
+	
+  nav{width:100%}
+	nav ul li{    display: inline;
+    margin-right: 0px;}
+  nav ul li a{font-size:12px;padding:10px 6px}
+	
+	.wrapper{width: 100%;}
+  .banner .content{width: 100%;
+    margin-top: 50px;padding:0 25px;}
+  .single{width: 100%;
+    padding-left: 15px;border-right:0}
+  .col-3{padding:15px;width:100%}
+  .col-60{width:100%;margin-bottom:20px}
+  .col-40{width:100%}
+  footer{padding: 10px 15px;}
+}
